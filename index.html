@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TECH STORE</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- PARTE SUPERIOR DEL HEADER -->
+<header>
+  <div class="interior-encabezado">
+
+    <div class="logo">
+      <img src="imagenes/Blessica Bar & Resto.png" alt="TECH STORE">
+    </div>
+    <div>
+      <a href="index.html" class="boton-inicio">Inicio</a>
+    </div>
+
+    <div class="barra-busqueda">
+      <select id="categoria-filtro-inicio">
+        <option value="">Todo</option>
+        <option value="laptops">Laptops y PCs</option>
+        <option value="componentes">Componentes</option>
+        <option value="monitores">Monitores</option>
+        <option value="perifericos">Perifericos</option>
+        <option value="impresion">Impresión</option>
+        <option value="celulares">Celulares & Tablets</option>
+        <option value="redes">Redes</option>
+      </select>
+      <input type="text" id="busqueda-input-inicio" placeholder="Buscar Productos">
+    </div>
+
+    <div class="acciones-encabezado">
+      <a href="usuario/usuario.html" class="boton-cuenta">Registrar/Ingresar</a>
+      <a href="carrito/carrito.html" class="boton-carrito">Carrito</a>
+    </div>
+
+  </div>
+</header>
+
+<!-- BARRA DE LAS CATEGORIAS -->
+<nav>
+  <div class="interior-nav">
+    <a href="catalogo/catalogo.html" class="todas-categorias">☰ Todos los Productos</a>
+    <a href="#">Laptops y PCs</a>
+    <a href="#">Componentes</a>
+    <a href="#">Monitores</a>
+    <a href="#">Perifericos</a>
+    <a href="#">Impresión</a>
+    <a href="#">Celulares & Tablets</a>
+    <a href="#">Redes</a>
+  </div>
+</nav>
+
+<!-- BANNER / CARRUSEL DE INICIO -->
+<section class="seccion-hero">
+ <div class="interior-hero">
+
+  <div class="carrusel-hero">
+    <div class="carrusel-pista">
+
+      <div class="carrusel-diapositiva" style="background-image:url('imagenes/ChatGPT Image 12 jul 2026, 20_25_32.png')">
+        <div class="texto-hero">
+          <span class="etiqueta-hero">Lo nuevo</span>
+          <h2>COMPRA TECNOLOGÍA DE CALIDAD</h2>
+          <a href="catalogo/catalogo.html" class="boton-hero">Ver más</a>
+        </div>
+      </div>
+
+      <div class="carrusel-diapositiva" style="background-image:url('imagenes/601c5dcf-be89-4524-ac07-4ed17ee5a08f.png')">
+        <div class="texto-hero">
+          <a href="catalogo/catalogo.html" class="boton-hero">Ver más</a>
+        </div>
+      </div>
+
+       <div class="carrusel-diapositiva" style="background-image:url('imagenes/ChatGPT Image 14 jul 2026, 16_11_12.png')">
+        <div class="texto-hero">
+          <a href="catalogo/catalogo.html" class="boton-hero">Ver más</a>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carrusel-flecha carrusel-flecha-izq" aria-label="Anterior">‹</button>
+    <button class="carrusel-flecha carrusel-flecha-der" aria-label="Siguiente">›</button>
+    <div class="carrusel-puntos"></div>
+  </div>
+
+  <div class="lateral-hero">
+    <div class="tarjeta-lateral lateral-1"></div>
+    <div class="tarjeta-lateral lateral-2"></div>
+  </div>
+
+ </div>
+</section>
+
+<!-- MARCAS -->
+<section class="seccion-marcas">
+  <div class="interior-marcas">
+    <h3>NUESTRAS MARCAS</h3>
+    <div class="cuadricula-marcas">
+      <div class="tarjeta-marca"><img src="imagenes/msi-logo-1.png" alt="MSI"></div>
+      <div class="tarjeta-marca"><img src="imagenes/lenovo-logo-png_seeklogo-267847.png" alt="LENOVO"></div>
+      <div class="tarjeta-marca"><img src="imagenes/logitech-logo-01.png" alt="LOGITECH"></div>
+      <div class="tarjeta-marca"><img src="imagenes/HP_logo_2012.svg.webp" alt="HP"></div>
+      <div class="tarjeta-marca"><img src="imagenes/redragon.png" alt="REDDRAGON"></div>
+      <div class="tarjeta-marca"><img src="imagenes/amd-4-logo-png-transparent.png" alt="AMD"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="seccion-servicios">
+  <div class="interior-servicios">
+
+    <div class="texto-servicios">
+      <h2>LOS MEJORES EN SERVICIO TECNICO DE PANAMÁ.</h2>
+      <p>Atendemos directo por WhatsApp.</p>
+      <a href="https://wa.me/50766088929" class="boton-servicios" target="_blank">Agendar servicio →</a>
+    </div>
+
+    <div class="cuadricula-servicios">
+      <div class="tarjeta-servicio">
+        <span class="icono-servicio">🔍</span>
+        <h4>Diagnóstico Técnico</h4>
+        <p>Encontramos el problema</p>
+      </div>
+      <div class="tarjeta-servicio">
+        <span class="icono-servicio">🛠️</span>
+        <h4>Armado de PC</h4>
+        <p>Ensamblamos tu PC</p>
+      </div>
+      <div class="tarjeta-servicio">
+        <span class="icono-servicio">⚙️</span>
+        <h4>Instalar Componentes</h4>
+        <p>RAM, SSD, GPU, Coolers, etc.</p>
+      </div>
+      <div class="tarjeta-servicio">
+        <span class="icono-servicio">🧹</span>
+        <h4>Mantenimiento</h4>
+        <p>Limpieza, pasta térmica, ordenamiento de cables</p>
+      </div>
+      <div class="tarjeta-servicio">
+        <span class="icono-servicio">💻</span>
+        <h4>Instalación de SO</h4>
+        <p>Windows limpio, instalación drivers, optimizado</p>
+      </div>
+      <div class="tarjeta-servicio">
+        <span class="icono-servicio">⚡</span>
+        <h4>Update de BIOS</h4>
+        <p>Actualización segura para mejora de rendimiento y compatibilidad</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="pie-pagina">
+  <div class="interior-pie">
+
+    <div class="columna-pie">
+      <h4>TECH STORE</h4>
+      <p>Tu tienda de tecnología: laptops, componentes, periféricos y más, con la mejor atención y garantía.</p>
+    </div>
+
+    <div class="columna-pie">
+      <h4>Enlaces</h4>
+      <ul>
+        <li><a href="catalogo/catalogo.html">Todos los Productos</a></li>
+        <li><a href="usuario/usuario.html">Mi Cuenta</a></li>
+      </ul>
+    </div>
+
+    <div class="columna-pie">
+      <h4>Extra</h4>
+      <ul>
+        <li><a href="info/info.html">Sobre Nosotros</a></li>
+        <li><a href="info/info.html">Políticas de Privacidad</a></li>
+        <li><a href="info/info.html">Términos y Condiciones</a></li>
+      </ul>
+    </div>
+
+    <div class="columna-pie">
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Panamá, Panamá</li>
+        <li>📞 +507 6609-8900</li>
+        <li>✉️ contacto@techstore.com</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="pie-inferior">
+    <p>© 2026 TECH STORE. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- BOTON FLOTANTE WHATSAPP -->
+<a href="https://wa.me/50766098900" class="whatsapp-flotante" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script src="carrusel.js"></script>
+<script src="carrito/carrito.js"></script>
+<script src="busqueda-inicio.js"></script>
+</body>
+</html>

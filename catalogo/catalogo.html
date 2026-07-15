@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todos los Productos - TECH STORE</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="catalogo.css">
+</head>
+<body>
+
+<header>
+  <div class="interior-encabezado">
+    <div class="logo">
+      <img src="../imagenes/Blessica Bar & Resto.png" alt="TECH STORE">
+    </div>
+    <div>
+      <a href="../index.html" class="boton-inicio">Inicio</a>
+    </div>
+    <div class="barra-busqueda">
+      <select id="categoria-filtro-catalogo">
+        <option value="">Todo</option>
+        <option value="laptops">Laptops y PCs</option>
+        <option value="componentes">Componentes</option>
+        <option value="monitores">Monitores</option>
+        <option value="perifericos">Perifericos</option>
+        <option value="impresion">Impresión</option>
+        <option value="celulares">Celulares & Tablets</option>
+        <option value="redes">Redes</option>
+      </select>
+      <input type="text" id="busqueda-input-catalogo" placeholder="Buscar Productos">
+    </div>
+    <div class="acciones-encabezado">
+      <a href="../usuario/usuario.html" class="boton-cuenta">Registrar/Ingresar</a>
+      <a href="../carrito/carrito.html" class="boton-carrito">Carrito</a>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="interior-nav">
+    <a href="catalogo.html" class="todas-categorias activo">☰ Todas las Categorías</a>
+    <a href="#">Laptops y PCs</a>
+    <a href="#">Componentes</a>
+    <a href="#">Monitores</a>
+    <a href="#">Perifericos</a>
+    <a href="#">Impresión</a>
+    <a href="#">Celulares & Tablets</a>
+    <a href="#">Redes</a>
+  </div>
+</nav>
+
+<main class="catalogo">
+  <h1>Todos los Productos</h1>
+
+  <div class="barra-filtro">
+    <input type="text" id="busqueda-catalogo" placeholder="Buscar en el catálogo...">
+    <select id="categoria-catalogo">
+      <option value="">Todas las categorías</option>
+      <option value="laptops">Laptops y PCs</option>
+      <option value="componentes">Componentes</option>
+      <option value="monitores">Monitores</option>
+      <option value="perifericos">Perifericos</option>
+      <option value="impresion">Impresión</option>
+      <option value="celulares">Celulares & Tablets</option>
+      <option value="redes">Redes</option>
+    </select>
+  </div>
+
+  <div class="cuadricula-productos">
+
+    <div class="tarjeta-producto" data-id="1" data-categoria="laptops">
+      <div class="imagen-producto"><img src="../imagenes/PS0009563_1_554x554.webp" alt="HP Victus"></div>
+      <p class="nombre-producto">HP Victus</p>
+      <p class="precio-producto">$799.99</p>
+      <button>Agregar al Carrito</button>
+    </div>
+
+    <div class="tarjeta-producto" data-id="2" data-categoria="laptops">
+      <div class="imagen-producto"><img src="../imagenes/PS0017066_3_554x554.webp" alt="HP Victus Infinity"></div>
+      <p class="nombre-producto">HP Victus Infinity</p>
+      <p class="precio-producto">$999.99</p>
+      <button>Agregar al Carrito</button>
+    </div>
+
+    <div class="tarjeta-producto" data-id="3" data-categoria="laptops">
+      <div class="imagen-producto"><img src="../imagenes/PS0016649_3_554x554.webp" alt="Lenovo ThinkBook"></div>
+      <p class="nombre-producto">Lenovo ThinkBook</p>
+      <p class="precio-producto">$1199.99</p>
+      <button>Agregar al Carrito</button>
+    </div>
+
+    <div class="tarjeta-producto" data-id="4" data-categoria="laptops">
+      <div class="imagen-producto"><img src="../imagenes/PS0017655_7_554x554.webp" alt="Laptop ASUS"></div>
+      <p class="nombre-producto">Laptop ASUS</p>
+      <p class="precio-producto">$699.99</p>
+      <button>Agregar al Carrito</button>
+    </div>
+
+    <div class="tarjeta-producto" data-id="5" data-categoria="perifericos">
+      <div class="imagen-producto"><img src="../imagenes/MIGPS0015258_1_500x500.jpg" alt="Combo Teclado y Mouse"></div>
+      <p class="nombre-producto">Combo Teclado y Mouse</p>
+      <p class="precio-producto">$25.99</p>
+      <button>Agregar al Carrito</button>
+    </div>
+
+    <div class="tarjeta-producto" data-id="6" data-categoria="perifericos">
+      <div class="imagen-producto"><img src="../imagenes/MIGPS0015231_1_554x554.webp" alt="Mouse Inalambrico"></div>
+      <p class="nombre-producto">Mouse Inalambrico</p>
+      <p class="precio-producto">$6.99</p>
+      <button>Agregar al Carrito</button>
+    </div>
+
+    <div class="tarjeta-producto" data-id="7" data-categoria="impresion">
+      <div class="imagen-producto"><img src="../imagenes/PS0008896_0_554x554.webp" alt="Impresora Epson"></div>
+      <p class="nombre-producto">Impresora Epson</p>
+      <p class="precio-producto">$400.99</p>
+      <button>Agregar al Carrito</button>
+    </div>
+
+    <div class="tarjeta-producto" data-id="8" data-categoria="laptops">
+      <div class="imagen-producto"><img src="../imagenes/PS0014063_0_554x554.webp" alt="All-In-One Dell Inspiron"></div>
+      <p class="nombre-producto">All-In-One Dell Inspiron</p>
+      <p class="precio-producto">$1200.99</p>
+      <button>Agregar al Carrito</button>
+    </div>
+
+    <div class="tarjeta-producto" data-id="9" data-categoria="monitores">
+      <div class="imagen-producto"><img src="../imagenes/PS0012689_2_554x554.webp" alt="Monitor Gaming 27 Pulgadas"></div>
+      <p class="nombre-producto">Monitor Gaming 27 Pulgadas</p>
+      <p class="precio-producto">$105.99</p>
+      <button>Agregar al Carrito</button>
+    </div>
+
+    <div class="tarjeta-producto" data-id="10" data-categoria="perifericos">
+      <div class="imagen-producto"><img src="../imagenes/PS0014165_0_500x500.webp" alt="Teclado Gaming Star Wars"></div>
+      <p class="nombre-producto">Teclado Gaming - Star Wars</p>
+      <p class="precio-producto">$5.99</p>
+      <button>Agregar al Carrito</button>
+    </div>
+
+    <div class="tarjeta-producto" data-id="11" data-categoria="impresion">
+      <div class="imagen-producto"><img src="../imagenes/PS0006226_9_500x500.webp" alt="Impresora HP"></div>
+      <p class="nombre-producto">Impresora HP</p>
+      <p class="precio-producto">$155.99</p>
+      <button>Agregar al Carrito</button>
+    </div>
+
+    <div class="tarjeta-producto" data-id="12" data-categoria="perifericos">
+      <div class="imagen-producto"><img src="../imagenes/PS0014158_0_500x500.webp" alt="Teclado Gaming Star Wars Verde"></div>
+      <p class="nombre-producto">Teclado Gaming - Star Wars Verde</p>
+      <p class="precio-producto">$75.99</p>
+      <button>Agregar al Carrito</button>
+    </div>
+
+    <div class="tarjeta-producto" data-id="13" data-categoria="monitores">
+      <div class="imagen-producto"><img src="../imagenes/PS0015108_0_554x554.webp" alt="Monitor Gaming Curvo 27 Pulgadas"></div>
+      <p class="nombre-producto">Monitor Gaming Curvo 27 Pulgadas</p>
+      <p class="precio-producto">$159.99</p>
+      <button>Agregar al Carrito</button>
+    </div>
+
+  </div>
+</main>
+
+<footer class="pie-pagina">
+  <div class="interior-pie">
+    <div class="columna-pie">
+      <h4>TECH STORE</h4>
+      <p>Tu tienda de tecnología: laptops, componentes, periféricos y más, con la mejor atención y garantía.</p>
+    </div>
+    <div class="columna-pie">
+      <h4>Enlaces</h4>
+      <ul>
+        <li><a href="catalogo.html">Todos los Productos</a></li>
+        <li><a href="../usuario/usuario.html">Mi Cuenta</a></li>
+      </ul>
+    </div>
+    <div class="columna-pie">
+      <h4>Extra</h4>
+      <ul>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Políticas de Privacidad</a></li>
+        <li><a href="#">Términos y Condiciones</a></li>
+        <li><a href="#">Centro de Ayuda</a></li>
+      </ul>
+    </div>
+    <div class="columna-pie">
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Panamá, Panamá</li>
+        <li>📞 +507 6609-8900</li>
+        <li>✉️ contacto@techstore.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="pie-inferior">
+    <p>© 2026 TECH STORE. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="../carrito/carrito.js"></script>
+<script src="zoom.js"></script>
+<script src="filtro.js"></script>
+<script src="../busqueda-inicio.js"></script>
+</body>
+</html>

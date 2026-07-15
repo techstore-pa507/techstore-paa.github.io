@@ -1,0 +1,116 @@
+:root{
+  --azul-marino: #1D4ED8;
+  --azul: #2E7EC9;
+  --fondo: #F3F6FA;
+  --blanco: #FFFFFF;
+  --tinta: #1B2436;
+  --tenue: #7C8798;
+  --linea: #E1E5EC;
+}
+*{ box-sizing: border-box; }
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: var(--fondo);
+  font-family: 'Barlow', Arial, sans-serif;
+  color: var(--tinta);
+}
+.enlace-volver{
+  position:fixed;
+  top: 20px;
+  left: 24px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--tenue);
+  text-decoration:none;
+}
+.enlace-volver:hover{ color: var(--azul); text-decoration: underline; }
+.tarjeta{
+  width:100%;
+  max-width: 400px;
+  background: var(--blanco);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(19,34,58,0.12);
+  padding: 36px 32px;
+}
+h1{
+  text-align:center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  margin: 0 0 24px 0;
+  color: var(--azul-marino);
+}
+.pestanas{
+  display:flex;
+  border: 1px solid var(--linea);
+  border-radius: 8px;
+  padding: 4px;
+  margin-bottom: 22px;
+  background: var(--fondo);
+}
+.pestanas label{
+  flex:1;
+  text-align:center;
+  padding: 9px 0;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--tenue);
+  border-radius: 6px;
+  cursor:pointer;
+}
+.oculto{ position:absolute; opacity:0; pointer-events:none; }
+#ingresar:checked ~ .pestanas label[for="ingresar"],
+#registrar:checked ~ .pestanas label[for="registrar"]{
+  background: var(--azul-marino);
+  color:#fff;
+}
+
+.panel{ display:none; }
+#ingresar:checked ~ .paneles .panel-ingreso{ display:block; }
+#registrar:checked ~ .paneles .panel-registro{ display:block; }
+
+.campo{ margin-bottom: 16px; }
+.campo label{
+  display:block;
+  font-size: 0.78rem;
+  font-weight: bold;
+  color: var(--tenue);
+  margin-bottom: 6px;
+}
+.campo input{
+  width:100%;
+  padding: 10px 12px;
+  border: 1px solid var(--linea);
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+.campo input:focus{
+  outline: none;
+  border-color: var(--azul);
+  box-shadow: 0 0 0 3px rgba(46,126,201,0.15);
+}
+a{
+  color: var(--azul);
+  text-decoration: none;
+  font-weight: bold;
+  cursor:pointer;
+}
+a:hover{ text-decoration: underline; }
+button{
+  width:100%;
+  padding: 12px 0;
+  background: var(--azul-marino);
+  color:#fff;
+  border:none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor:pointer;
+}
+button:hover{ background: var(--azul); }

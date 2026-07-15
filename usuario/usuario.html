@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TECH STORE — Registrar / Ingresar</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="usuario.css">
+</head>
+<body>
+
+<a href="../index.html" class="enlace-volver">← Volver a la tienda</a>
+
+<div class="tarjeta">
+  <input class="oculto" type="radio" name="vista" id="ingresar" checked>
+  <input class="oculto" type="radio" name="vista" id="registrar">
+
+  <h1>Registrar / Ingresar</h1>
+
+  <nav class="pestanas">
+    <label for="ingresar">Iniciar sesión</label>
+    <label for="registrar">Crear cuenta</label>
+  </nav>
+
+  <div class="paneles">
+
+    <div class="panel panel-ingreso">
+      <div class="campo">
+        <label for="correo-ingreso">Correo electrónico</label>
+        <input type="email" id="correo-ingreso">
+      </div>
+      <div class="campo">
+        <label for="clave-ingreso">Contraseña</label>
+        <input type="password" id="clave-ingreso">
+      </div>
+      <button type="button">Iniciar sesión</button>
+    </div>
+
+    <div class="panel panel-registro">
+      <div class="campo">
+        <label for="nombre-registro">Nombre completo</label>
+        <input type="text" id="nombre-registro">
+      </div>
+      <div class="campo">
+        <label for="correo-registro">Correo electrónico</label>
+        <input type="email" id="correo-registro">
+      </div>
+      <div class="campo">
+        <label for="clave-registro">Contraseña</label>
+        <input type="password" id="clave-registro">
+      </div>
+      <button type="button">Crear cuenta</button>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
